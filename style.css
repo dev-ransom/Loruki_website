@@ -3,6 +3,10 @@
  /* custom variables  */
  :root {
    --bg-color: #8a2be2;
+   --h1-font-size: 40px;
+   --p-primary-font-size: 20px;
+   --blue-color: #2954b2;
+   --h3-number-fz: 25px;
  }
 
 
@@ -93,11 +97,12 @@
 
 
 .showcase h1{
-   font-size: 40px;
+   font-size: var(--h1-font-size);
 }
 
 .showcase p{
    margin: 20px 0;
+   
 }
 
 .showcase .grid{
@@ -180,14 +185,33 @@ input:valid + label
    transition: 0.3s ease-in-out;
 }
 
-
-input:focus ,
-input:valid{
-   border-bottom: 4px solid red;
-}
-
 .showcase_text p{
    margin-bottom: 30px;
 }
 
+.stats p{
+   color: var(--blue-color);
+   font-weight: 700;
+   font-size: var(--p-primary-font-size);
+}
 
+.stats-heading{
+   width: 500px;
+   margin: auto;
+}
+
+.stats .grid h3{
+   font-size: 40px;
+}
+
+.CLI .grid{
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+}
+
+
+.CLI .grid >*:first-child{
+   grid-column: 1 / span 2;
+   grid-row: 1 / span 2;
+}
+/*  */
