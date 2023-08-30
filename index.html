@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ransom website </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="utilities.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
             <h1 class="logo">RamseyCode</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li ><a href="index.html">Home</a></li>
                     <li><a href="Feature.html">Features</a></li>
                     <li><a href="Docs.html">Docs</a></li>
                 </ul>
@@ -34,18 +35,47 @@
                 <h2>Request a Demo</h2>
                 <form >
                     <article class="form-control">
-                        <input type="text" name="Name" placeholder="Name">
+                        <input type="text" name="Name"  required>
+                        <label for="name">Name</label>
                     </article>
                     <article class="form-control">
-                        <input type="text" name="Community" placeholder="Community Name">
+                        <input type="text" name="Community"  required>
+                        <label for="Community">Community Name</label>
                     </article>
                     <article class="form-control">
-                        <input type="email" name="email" placeholder="Email">
+                        <input type="email" name="email" required>
+                        <label for="email">Email</label>
                     </article>
-                    <input type="submit" value="Send">
+                    <button type="submit" class="btn">Send</button>
                 </form>
             </article>
         </div>
+    </section>
+
+    <!-- stats -->
+    <section class="stats" >
+        <article class="container">
+            <h3 class="text-center my-1 stats-heading">
+                Welcome to the best platform for building applications of all types with modern architecture and scaling
+            </h3>
+            <article class="grid grid-3 text-center  my-4">
+                <article>
+                    <i class="fas fa-server fa-3x"></i>
+                    <h3>10,349,405</h3>
+                    <p class="text-secondary">Deployments</p>
+                </article>
+                <article>
+                    <i class="fas fa-upload fa-3x"></i>
+                    <h3>10,349,405</h3>
+                    <p class="text-secondary">Published</p>
+                </article>
+                <article>
+                    <i class="fas fa-project-diagram fa-3x"></i>
+                    <h3>10,349,405</h3>
+                    <p class="text-secondary">projects</p>
+                </article>
+            </article>
+        </article>
     </section>
     <script src="script.js"></script>
 </body>
