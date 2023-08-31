@@ -312,11 +312,11 @@ input:valid + label
 
 /* animation for desktop features */
 .feature-text{
-   animation: moverightside 1s linear 1;
+   animation: moveleftside 1s linear 1;
    animation-delay: 1s;
 }
 
-@keyframes moverightside{
+@keyframes moveleftside{
    0%{
       transform: translateX(-800px);
    }
@@ -327,18 +327,20 @@ input:valid + label
 
 /* animation for image desktop view */
 .moveup{
-   animation: moveup 2s linear 1;
+   animation: moverightside 2s linear 1;
    animation-delay: 1s;
 }
 
-@keyframes moveup{
+@keyframes moverightside{
    0%{
-      transform: translateY(800px);
+      transform: translateX(800px);
    }
    100%{
-      transform: translateY(0);
+      transform: translateX(0);
    }
 }
+
+/* designs for doc */
 
 /* tablets and under */
 @media(max-width: 838px){
@@ -511,9 +513,8 @@ input:valid + label
    .features{
       padding: 0;
    }
-}
 
-/* animation for feature mobile view  */
+   /* animation for feature mobile view  */
 .feature-text{
    animation: movedown 1s linear 1;
    animation-delay: 1s;
@@ -526,5 +527,10 @@ input:valid + label
    100%{
       transform: translateY(0);
    }
+
 }
+}
+
+
+
 
