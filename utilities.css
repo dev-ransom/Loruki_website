@@ -146,6 +146,33 @@
     color: white;
 }
 .bg-light, .btn-light{
-    background-color: var(--secondary-color);
+    background-color: var(--light-color);
     color: #333;
+}
+
+.bg-secondary a, .btn-secondary a, .bg-light a, .btn-light a, .bg-secondary a, .btn-secondary a, .bg-dark a, .btn-dark a{
+    color: white;
+}
+
+/* text sizes */
+
+.lead{
+    font-size: 20px;
+}
+
+.sm{
+    font-size: 1em;
+}
+
+.md{
+    font-size: 2em;
+}
+
+.lg{
+  
+    font-size: 3em;
+}
+
+.xl{
+    font-size: 4em;
 }
