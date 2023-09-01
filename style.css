@@ -342,6 +342,48 @@ input:valid + label
 
 /* designs for doc */
 
+.Docs-grid-content .card{
+   padding: 20px  30px 20px 30px;
+}
+
+.Docs-grid-content ul li {
+   padding: 9px 0;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.505);
+}
+
+.Docs-grid-content h3{
+   margin: 50px 0 0 0;
+}
+
+.Docs-grid-content .alert{
+   background-color: #5cb85c;
+   color: white;
+   font-weight: bold;
+}
+
+.Docs-grid-content .flex{ 
+   gap: 9px;
+}
+
+.Docs-grid-content .container-alert li{
+   border: 0;
+}
+
+.Docs-grid-content .terminal-cont li:nth-child(even){
+   background: #000;
+   color: white;
+   padding: 10px 20px;
+}
+
+.Docs-grid-content .grid-3 >*:nth-child(1){
+   background-color: whitesmoke;
+}
+
+.Docs-grid-content .grid-3 >*:nth-child(2){
+   grid-column: span 2;
+   grid-row: span 2 ;
+}
+
 /* tablets and under */
 @media(max-width: 838px){
    .grid, .CLI .grid, .showcase .grid, .stats .grid, .cloud .grid{
