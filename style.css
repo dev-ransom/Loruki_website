@@ -95,7 +95,7 @@
 }
 
 
-/* animation for showcase-text */
+/* animation for  desktop showcase-text */
 
 .showcase_text{
    animation: moverightside 1s linear 1;
@@ -104,7 +104,7 @@
 
 @keyframes moverightside{
    0%{
-      transform: translateX(-800px);
+      transform: translateX(-100%);
    }
    100%{
       transform: translateX(0);
@@ -119,13 +119,14 @@
 
 @keyframes moveleftside{
    0%{
-      transform: translateX(800px);
+      transform: translateX(100%);
    }
    100%{
       transform: translateX(0);
-   }
+   } 
 }
-/* Showcase  */
+
+ /* Showcase  */
 .showcase{
    height: 400px;
    color: white;
@@ -202,7 +203,21 @@
 
 .stats{
    padding: 100px 0;
+   animation: bottomside 1s linear 1;
+   animation-delay: 1s;
 }
+
+/* stats animation  */
+@keyframes bottomside{
+   0%{
+      transform: translateY(100%);
+   }
+   100%{
+      transform: translateY(0);
+   }
+}
+
+
 /* creating floating  Placeholder */
 label{
    position: absolute;
@@ -310,36 +325,6 @@ input:valid + label
    grid-column: 1 / span 2;
 }
 
-/* animation for desktop features */
-.feature-text{
-   animation: moveleftside 1s linear 1;
-   animation-delay: 1s;
-}
-
-@keyframes moveleftside{
-   0%{
-      transform: translateX(-800px);
-   }
-   100%{
-      transform: translateX(0);
-   }
-}
-
-/* animation for image desktop view */
-.moveup{
-   animation: moverightside 2s linear 1;
-   animation-delay: 1s;
-}
-
-@keyframes moverightside{
-   0%{
-      transform: translateX(800px);
-   }
-   100%{
-      transform: translateX(0);
-   }
-}
-
 /* designs for doc */
 
 .Docs-grid-content .card{
@@ -409,34 +394,6 @@ input:valid + label
       grid-column: 1 ;
       grid-row: 1 ;
    }
-   /* animation for tablets and under */
-   .showcase_text{
-      animation: movedown 2s linear 1;
-      animation-delay: 1s;
-   }
-   
-   @keyframes movedown{
-      0%{
-         transform: translateY(-200px);
-      }
-      100%{
-         transform: translateY(0);
-      }
-   }
-   /* animation for showcase-form */
-.showcase_form{
-   animation: moveup 2s linear 1;
-   animation-delay: 1s;
-}
-
-@keyframes moveup{
-   0%{
-      transform: translateY(800px);
-   }
-   100%{
-      transform: translateY(0);
-   }
-}
 
 .features{
    padding: 40px 30px;
@@ -520,8 +477,37 @@ input:valid + label
    }
 
 
-   
+/* animation for  mobile showcase-text */
 
+.showcase_text{
+   animation: movedown 2s linear 1;
+   animation-delay: 1s;
+}
+
+@keyframes movedown{
+   0%{
+      transform: translateY(-100%);
+   }
+   100%{
+      transform: translateY(0);
+   }
+}
+
+
+/* animation for showcase-form  mobile*/
+.showcase_form{
+   animation: moveup 2s linear 1;
+   animation-delay: 1s;
+}
+
+@keyframes moveup{
+   0%{
+      transform: translateY(100%);
+   }
+   100%{
+      transform: translateY(0);
+   } 
+}
 
    /* styling mobile for feature */
    .feature-text{
@@ -555,24 +541,12 @@ input:valid + label
    .features{
       padding: 0;
    }
-
-   /* animation for feature mobile view  */
-.feature-text{
-   animation: movedown 1s linear 1;
-   animation-delay: 1s;
-}
-
-@keyframes movedown{
-   0%{
-      transform: translateY(-800px);
-   }
-   100%{
-      transform: translateY(0);
-   }
-
-}
 }
 
 
 
 
+.hidden{
+   visibility: hidden;
+   height: 0;
+}

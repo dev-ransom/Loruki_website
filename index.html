@@ -37,7 +37,13 @@
             </article>
             <article class="showcase_form card">
                 <h2>Request a Demo</h2>
-                <form >
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                        <label>
+                          Don’t fill this out if you’re human: <input name="bot-field" />
+                        </label>
+                      </p>
                     <article class="form-control">
                         <input type="text" name="Name"  required>
                         <label for="name">Name</label>
@@ -50,7 +56,7 @@
                         <input type="email" name="email" required>
                         <label for="email">Email</label>
                     </article>
-                    <button type="submit" class="btn">Send</button>
+                    <button type="submit" class="btn" id="submit_btn">Send</button>
                 </form>
             </article>
         </div>
@@ -146,7 +152,10 @@
             </article>
         </article>
     </section>
-
+<!--  success message-->
+    <section class="success bg-dark" style="height: 100vh;">
+        <article class="container" ></article>
+    </section>
     <!-- footer section -->
     
     <footer class="footer bg-dark py-5">
